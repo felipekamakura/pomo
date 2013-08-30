@@ -1,0 +1,14 @@
+#!/bin/bash
+
+TIME=25
+
+if [[ $1 =~ ^[0-9]+$ ]]
+then	
+	TIME=$1
+fi
+
+notify-send "Starting a $TIME minutes timer!"
+sleep "$TIME"m
+notify-send 'Trrrrrrrriimm' 'You should stop working now!'
+
+
